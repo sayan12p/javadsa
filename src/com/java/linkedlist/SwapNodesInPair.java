@@ -10,7 +10,7 @@ public class SwapNodesInPair {
         dummy.next=head;
         ListNode cur=head;
         ListNode prev=dummy;
-        while(cur!=null && prev!=null ){
+        while(cur!=null && prev!=null && cur.next!=null){
            prev.next=cur.next;
            cur.next=prev.next.next;
            prev.next.next=cur;
