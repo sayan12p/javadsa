@@ -7,6 +7,7 @@ public class Removekdigits {
     public static String removeKdigits(String num, int k) {
         //You can code here
         ArrayDeque<Integer> stack = new ArrayDeque<>();
+        String result="";
         StringBuilder sb=new StringBuilder();
         for (int i = 0; i < num.length(); i++) {
                 int cur = Character.getNumericValue(num.charAt(i));
@@ -16,15 +17,16 @@ public class Removekdigits {
                 }
                 stack.push(cur);
         }
-        while(k>0) stack.pop();
+        while(k-->0) stack.pop();
         while(!stack.isEmpty()){
             sb.append(stack.pop());
         }
-        return sb.reverse().toString();
+        result=sb.reverse().toString();
+        return result.isEmpty() ?"0":result;
     }
 
     public static void main(String[] args) {
-        String s="14322231";
-        System.out.println(removeKdigits(s,3));
+        String s="123456789";
+        System.out.println(removeKdigits(s,9));
     }
 }
