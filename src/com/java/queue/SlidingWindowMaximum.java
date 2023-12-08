@@ -12,14 +12,14 @@ public class SlidingWindowMaximum {
         List<Integer> result=new ArrayList<>();
         int max=Integer.MIN_VALUE;
         for(int i=0;i<nums.length;i++){
-            if(!queue.isEmpty() && i==k-1){
-                queue.pop();
+            if(!queue.isEmpty() && queue.peek()==i-k){
+                queue.poll();
             }
             int cur=nums[i];
             while(!queue.isEmpty() && nums[queue.peekLast()]<cur){
                 queue.pollLast();
             }
-            queue.push(i);
+            queue.offer(i);
             if(i>=k-1){
                result.add(nums[queue.peek()]);
             }
