@@ -20,6 +20,7 @@ public class ContinuousSubarrays {
             }
             maxqueue.offer(cur);
             minqueue.offer(cur);
+            //check if the difference is greater than 2 and pop the max or min element from the queue and shift left pointer
             if(!maxqueue.isEmpty() && !minqueue.isEmpty()){
                 while(maxqueue.peekFirst()-minqueue.peekFirst()>2){
                     if(nums[l]==maxqueue.peekFirst()) maxqueue.pollFirst();
