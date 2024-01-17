@@ -13,7 +13,7 @@ public class MaxChunksToMakeSorted {
 
     }
     public static void main(String[] args) {
-        int[] arr={5,4,3,2,1};
+        int[] arr={1,0,2,3,4};
         System.out.println(maxChunksToSorted(arr));
     }
 }
