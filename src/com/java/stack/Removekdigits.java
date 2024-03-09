@@ -26,7 +26,7 @@ public class Removekdigits {
     }
 
     public static void main(String[] args) {
-        String s="123456789";
-        System.out.println(removeKdigits(s,9));
+        String s="1432219";
+        System.out.println(removeKdigits(s,3));
     }
 }

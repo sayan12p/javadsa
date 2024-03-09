@@ -4,29 +4,29 @@ package com.java.multithreading;
 import java.util.concurrent.atomic.AtomicInteger;
 
 class Atomic_integer{
-    private AtomicInteger counter = new AtomicInteger(0);
+    //private AtomicInteger counter = new AtomicInteger(0);
 
     // uncomment this block to see effect w/o using atomic integer
-//    private int counter;
-//
-//    Atomic_integer()
-//    {
-//        counter = 0;
-//    }
-//
-//    public void increment()
-//    {
-//        // no need for synchronized block / lock; only one thread can read / write on the variable at any given time
-//        ++counter;
-//    }
+    private int counter;
+
+    Atomic_integer()
+    {
+        counter = 0;
+    }
+
+    public void increment()
+    {
+        // no need for synchronized block / lock; only one thread can read / write on the variable at any given time
+        ++counter;
+    }
 
 
 // comment this increment() mnethod to see effect w/o using atomic integer
-public void increment()
-        {
-        // no need for synchronized block / lock; only one thread can read / write on the variable at any given time
-        counter.getAndIncrement();
-        }
+//public void increment()
+//        {
+//        // no need for synchronized block / lock; only one thread can read / write on the variable at any given time
+//        counter.getAndIncrement();
+//        }
 
     public int process()
     {
@@ -63,8 +63,8 @@ public void increment()
             e.printStackTrace();
         }
 
-        return counter.get();
-        //return counter;
+        //return counter.get();
+        return counter;
     }
 }
 public class Atomic_IntegerTest {

@@ -1,9 +1,6 @@
 package com.java;
 
-import java.util.Comparator;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.stream.Collectors;
 
 public class NthlargestSalary {
@@ -28,6 +25,7 @@ public class NthlargestSalary {
         map2.put("tom",1300);
         map2.put("daniel",1300);
         Map<Integer, List<String>> interimmap=map2.entrySet().stream().collect(Collectors.groupingBy(a->a.getValue(),Collectors.mapping(a->a.getKey(),Collectors.toList())));
+       //Map<String, Integer> interimmap=map2.entrySet().stream().collect(Collectors.groupingBy(m->m.getKey(),Collectors.maxBy(Comparator.comparingInt(Integer::compareTo)));
         System.out.println(interimmap);
         Map.Entry<Integer, List<String>> finalresult1 = interimmap.entrySet().stream().sorted(Comparator.comparing(i -> -i.getKey())).collect(Collectors.toList()).get(1);
         System.out.println(finalresult1);
