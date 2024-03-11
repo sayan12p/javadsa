@@ -1,5 +1,5 @@
 package com.java.linkedlist;
-
+import java.linkedlist.ListNode;
 public class PalindromeList {
 
     public static int isPalin(ListNode A) {

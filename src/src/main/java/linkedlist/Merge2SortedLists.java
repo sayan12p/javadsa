@@ -1,5 +1,5 @@
 package com.java.linkedlist;
-
+import java.linkedlist.ListNode;
 public class Merge2SortedLists {
     public static ListNode mergeTwoLists(ListNode list1, ListNode list2) {
         if(list1==null && list2!=null) return list2;

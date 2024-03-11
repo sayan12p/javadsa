@@ -1,5 +1,7 @@
 package com.java.linkedlist;
 
+import java.linkedlist.ListNode;
+
 public class KthNodeFromMiddle {
 
     public static int kthNode(ListNode head, int B) {

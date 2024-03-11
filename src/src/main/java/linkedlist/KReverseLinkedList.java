@@ -1,5 +1,7 @@
 package com.java.linkedlist;
 
+import java.linkedlist.ListNode;
+
 public class KReverseLinkedList {
 
     public static ListNode reverseKGroup(ListNode head, int k) {

@@ -1,5 +1,5 @@
 package com.java.linkedlist;
-
+import java.linkedlist.ListNode;
 public class ReverseNodesinKGroup {
 
     //https://leetcode.com/problems/reverse-nodes-in-k-group/discuss/4016676/JAVA-oror-TC-%3A-O(n)-oror-Optimized-Solution

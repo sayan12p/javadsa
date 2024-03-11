@@ -1,5 +1,5 @@
 package com.java.linkedlist;
-
+import java.linkedlist.ListNode;
 public class ReverseLinkedList {
 
     public static ListNode reverseList(ListNode head) {

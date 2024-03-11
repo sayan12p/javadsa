@@ -1,5 +1,5 @@
 package com.java.linkedlist;
-
+import java.linkedlist.ListNode;
 public class PartitionList {
 
     public static ListNode partition(ListNode A, int B) {

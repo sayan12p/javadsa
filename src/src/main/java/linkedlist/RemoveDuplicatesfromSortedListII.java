@@ -1,5 +1,5 @@
 package com.java.linkedlist;
-
+import java.linkedlist.ListNode;
 import java.util.Comparator;
 import java.util.List;
 import java.util.PriorityQueue;

@@ -1,5 +1,7 @@
 package com.java.linkedlist;
 
+import java.linkedlist.ListNode;
+
 public class IntersectionofLinkedLists {
 
     public static int findIntersection(ListNode firstHead, ListNode secondHead) {

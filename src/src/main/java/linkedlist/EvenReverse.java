@@ -1,5 +1,8 @@
 package com.java.linkedlist;
 
+
+import java.linkedlist.ListNode;
+
 public class EvenReverse {
 
     public static ListNode evenReverse(ListNode A) {
