@@ -1,5 +1,4 @@
-package com.java.linkedlist;
-import java.linkedlist.ListNode;
+package linklist;
 public class SortBinaryLinkedList {
 
     public static  ListNode sortBinaryList(ListNode A) {

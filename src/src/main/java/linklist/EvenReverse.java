@@ -1,7 +1,6 @@
-package com.java.linkedlist;
+package linklist;
 
 
-import java.linkedlist.ListNode;
 
 public class EvenReverse {
 

@@ -1,5 +1,4 @@
-package com.java.linkedlist;
-import java.linkedlist.ListNode;
+package linklist;
 import java.util.Comparator;
 import java.util.List;
 import java.util.PriorityQueue;

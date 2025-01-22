@@ -1,5 +1,5 @@
-package com.java.linkedlist;
-import java.linkedlist.ListNode;
+package linklist;
+
 public class RemoveDuplicatefromList {
 
     public static ListNode deleteDuplicates(ListNode head) {

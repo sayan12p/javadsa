@@ -1,6 +1,4 @@
-package com.java.linkedlist;
-
-import java.linkedlist.ListNode;
+package linklist;
 
 public class RemoveNthNode {
     public static ListNode removeNthFromEnd(ListNode head, int n) {
