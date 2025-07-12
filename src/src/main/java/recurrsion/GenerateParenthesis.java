@@ -12,7 +12,7 @@ public class GenerateParenthesis {
     }
 
     private static void generateParenthesishelper(List<String> result, String s, int n, int index,int open,int close) {
-        if(index==2*n){
+        if(open==close && open+close==2*n){
             result.add(s);
             return;
         }

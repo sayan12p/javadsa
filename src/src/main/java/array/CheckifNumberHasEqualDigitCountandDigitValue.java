@@ -23,7 +23,7 @@ public class CheckifNumberHasEqualDigitCountandDigitValue {
         return flag;
     }
     public static void main(String[] args) {
-        String num="1";
+        String num="1210";
         System.out.println(digitCount(num));
     }
 }
